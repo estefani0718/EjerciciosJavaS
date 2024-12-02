@@ -5,8 +5,10 @@ let persona= prompt(parseInt("ingrese su edad "));
  const edad =function (persona){
     if (persona <=17 )return `Eres menor de edad ${persona}`;
     if(persona>=18)return `eres mayor de edad ${persona}`;
-    if (persona <=0) return "ingresa valores positivos";
-    else return "ingrese su edad";
+    if(persona >=0){
+        console.log("ingrese valores positivos ");
+    }
+    else console.log("ingrese su edad correctamente ");
 }
 let resultado= edad(persona);
 console.log(resultado);

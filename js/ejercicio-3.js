@@ -2,10 +2,21 @@
     el divisor es cero el programa debe mostrar un error, se debe manejar mediante
     excepciones y el mensaje debe ser personalizado. */
 
-    let num1=prompt("ingrese un numero");
-    let num2=prompt("ingrese un 2 numero");
+   let pre=parseInt(prompt("cuantos numeros quieres dividir ?"));
     try{
+       for(let j=0;j <pre;j++)
+        {
+            let conta=0;
+            let num1=parseInt(prompt("ingrese un numero a dividir "));
+            let num2=parseInt(prompt("ingrese un segundo numero a dividir"));
+            conta++;
+            if(num1%num2==0)console.log("Error");
         
-    }catch(e){
-
+            else {
+                if(!num1%num==0)console.log(`este es tu resultado${conta}`);
+            }
+        }
+       
+    }catch(error){
+        console.log("error  capturado",error.message);
     }

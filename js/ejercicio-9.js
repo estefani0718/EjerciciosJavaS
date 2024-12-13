@@ -5,4 +5,11 @@
 // y si es mayor de 18 años, 10€.
 
 
+let pregunta =parseInt(prompt("ingrese la edad del usuario :"));
 
+if(pregunta <=4)alert("¡¡entrada gratis!! \n es un menor de 4 años");
+if(pregunta >=4 ||  pregunta <18) alert("¡¡ aahh que mal , tendras que pagar 5€!!");
+if(pregunta>=18)alert("¡¡aahh que mal !!, ya eres mayor de edad , tienes que pagar 10€");
+else {
+    if(pregunta==0) alert("ERROR ");
+}
